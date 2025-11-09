@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Typing Speed Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Typing Speed Game</h1>
+
+    <div id="text" class="text"></div>
+    <textarea id="input" placeholder="Click Start to begin..." disabled></textarea>
+
+    <div class="stats">
+      <p>Score: <span id="score">0</span></p>
+      <p>Time Left: <span id="time">60</span>s</p>
+    </div>
+
+    <div class="buttons">
+      <button id="start">Start</button>
+      <button id="endTurn" disabled>End Turn</button>
+      <button id="endGame" disabled>End Game</button>
+      <button id="restart">Restart</button>
+    </div>
+
+    <h2>🏆 Scoreboard</h2>
+    <table id="scoreboard">
+      <thead>
+        <tr>
+          <th>User</th>
+          <th>Score</th>
+          <th>WPM</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <p id="statusMsg" class="status"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
